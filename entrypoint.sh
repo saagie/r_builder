@@ -6,4 +6,4 @@ R CMD build  .
 
 R CMD check "${PKG_TARBALL}" --as-cran --no-manual --no-manual --no-manual --no-manual; CHECK_RET=$?
 
-Rscript -e 'covr::codecov()'
+Rscript -e 'covr::package_coverage()'
